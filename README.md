@@ -42,11 +42,17 @@ STEP:11 On the board, by giving required input, the LEDs starts to glow light, i
 
 # Program
 module encoder(d,a,b,c) ;
+
 input [7:0]d;
+
 output a,b,c;
+
 or g1(a,d[1],d[3],d[5],d[7]);
+
 or g2(b,d[2],d[3],d[6],d[7]);
+
 or g3(c,d[4],d[5],d[6],d[7]);
+
 endmodule
 
 # Output
